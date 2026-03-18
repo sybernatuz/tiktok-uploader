@@ -992,6 +992,7 @@ def _convert_videos_dict(
 
     return return_list
 
+
 def _handle_modals(page: Page) -> None:
     """
     Check for and dismiss common TikTok popups like 'Got it'.
@@ -1007,6 +1008,7 @@ def _handle_modals(page: Page) -> None:
     except Exception:
         # We pass silently because if the button isn't there, it's not an error
         pass
+
 
 class DescriptionTooLong(Exception):
     def __init__(self, message: str | None = None):
